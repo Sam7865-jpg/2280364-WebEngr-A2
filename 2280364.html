@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marks Table</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* ===== Page Styling ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* ===== Table Layout ===== */
+        table {
+            width: 900px;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        /* ===== Header Styling ===== */
+        .top-head {
+            font-size: 22px;
+        }
+
+        .sub-head {
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }
+
+        /* ===== Column Colors ===== */
+        .oop-assign {
+            background-color: #fff2b3;
+        }
+
+        .oop-quiz {
+            background-color: #f7c6d0;
+        }
+
+        .dsa-assign {
+            background-color: #cfeec8;
+        }
+
+        .dsa-quiz {
+            background-color: #6f9fd8;
+        }
+
+        .final-col {
+            background-color: #f28c28;
+        }
+
+       
+
+
+ /* ===== Total Row Styling ===== */
+        .total-row td {
+            background-color: #79b04b;
+            font-size: 18px;
+        }
+
+        .total-final {
+            background-color: #f28c28 !important;
+        }
+
+        /* ===== Misc ===== */
+        .row-num {
+            width: 60px;
+        }
+
+        .left-head {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Marks Table ===== -->
+    <table>
+
+        <!-- Top Header -->
+        <tr>
+            <th rowspan="3" class="top-head left-head">BSSE-6A</th>
+            <th colspan="5" class="top-head">Subject</th>
+        </tr>
+
+        <!-- Subject Categories -->
+        <tr>
+            <th colspan="2" class="sub-head">OOP</th>
+            <th colspan="2" class="sub-head">DSA</th>
+            <th rowspan="2" class="sub-head final-col">Final</th>
+        </tr>
+
+        <!-- Sub Categories -->
+        <tr>
+            <th class="sub-head">Assignment</th>
+            <th class="sub-head">Quiz</th>
+            <th class="sub-head">Assignment</th>
+            <th class="sub-head">Quiz</th>
+        </tr>
+
+        <!-- ===== Data Rows ===== -->
+        <tr>
+            <td class="row-num">1</td>
+            <td class="oop-assign">10</td>
+            <td class="oop-quiz">15</td>
+            <td class="dsa-assign">10</td>
+            <td class="dsa-quiz">15</td>
+            <td class="final-col">70</td>
+        </tr>
+
+        <tr>
+            <td class="row-num">2</td>
+            <td class="oop-assign">8</td>
+            <td class="oop-quiz">4</td>
+            <td class="dsa-assign">8</td>
+            <td class="dsa-quiz">7</td>
+            <td class="final-col">60</td>
+        </tr>
+
+        <tr>
+            <td class="row-num">3</td>
+            <td class="oop-assign">5</td>
+            <td class="oop-quiz">4</td>
+            <td class="dsa-assign">8</td>
+            <td class="dsa-quiz">5</td>
+            <td class="final-col">75</td>
+        </tr>
+
+        <tr>
+            <td class="row-num">4</td>
+            <td class="oop-assign">4</td>
+            <td class="oop-quiz">2</td>
+            <td class="dsa-assign">3</td>
+            <td class="dsa-quiz">1</td>
+            <td class="final-col">68</td>
+        </tr>
+
+        <tr>
+            <td class="row-num">5</td>
+            <td class="oop-assign">2</td>
+            <td class="oop-quiz">6</td>
+            <td class="dsa-assign">1</td>
+            <td class="dsa-quiz">7</td>
+            <td class="final-col">74</td>
+        </tr>
+
+        <tr>
+            <td class="row-num">6</td>
+            <td class="oop-assign">7</td>
+            <td class="oop-quiz">4</td>
+            <td class="dsa-assign">7</td>
+            <td class="dsa-quiz">3</td>
+            <td class="final-col">45</td>
+        </tr>
+
+        <!-- ===== Total Row ===== -->
+        <tr class="total-row">
+            <td>Total</td>
+            <td colspan="2">71</td>
+            <td colspan="2">75</td>
+            <td class="total-final">392</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
